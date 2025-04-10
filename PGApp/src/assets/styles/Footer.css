@@ -1,0 +1,125 @@
+.footer {
+background-color: var(--dark-background);
+color: var(--text-white);
+}
+
+.footer-container {
+width: 100%;
+margin: 0 auto;
+padding: 4rem 2rem 2rem;
+display: grid;
+grid-template-columns: 1fr 2fr;
+gap: 4rem;
+}
+
+.footer-logo h2 {
+font-family: var(--font-accent);
+font-size: 1.5rem;
+margin-bottom: 1rem;
+background: linear-gradient(90deg, var(--primary-light), var(--secondary-light));
+-webkit-background-clip: text;
+background-clip: text;
+-webkit-text-fill-color: transparent;
+}
+
+.footer-logo p {
+color: var(--text-light);
+font-size: 0.9rem;
+}
+
+.footer-links {
+display: grid;
+grid-template-columns: repeat(3, 1fr);
+gap: 2rem;
+}
+
+.footer-column h3 {
+color: var(--text-white);
+font-size: 1.1rem;
+margin-bottom: 1.5rem;
+position: relative;
+}
+
+.footer-column h3::after {
+content: '';
+position: absolute;
+left: 0;
+bottom: -8px;
+width: 40px;
+height: 2px;
+background-color: var(--primary-light);
+}
+
+.footer-column ul {
+list-style: none;
+}
+
+.footer-column li {
+margin-bottom: 0.75rem;
+}
+
+.footer-column a {
+color: var(--text-light);
+font-size: 0.9rem;
+transition: color 0.3s ease;
+}
+
+.footer-column a:hover {
+color: var(--secondary-light);
+}
+
+.social-links li {
+margin-bottom: 1rem;
+}
+
+.social-links a {
+display: flex;
+align-items: center;
+}
+
+.social-links a::before {
+content: '';
+display: inline-block;
+width: 18px;
+height: 18px;
+margin-right: 10px;
+background-size: contain;
+background-repeat: no-repeat;
+opacity: 0.7;
+transition: opacity 0.3s ease;
+}
+
+.social-links a:hover::before {
+opacity: 1;
+}
+
+.footer-bottom {
+padding: 1.5rem 2rem;
+text-align: center;
+border-top: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+.footer-bottom p {
+color: var(--text-light);
+font-size: 0.85rem;
+margin: 0;
+}
+
+/* Responsive */
+@media (max-width: 992px) {
+.footer-container {
+    grid-template-columns: 1fr;
+    gap: 2rem;
+}
+}
+
+@media (max-width: 768px) {
+.footer-links {
+    grid-template-columns: 1fr;
+    gap: 2rem;
+}
+
+.footer-container {
+    padding: 3rem 1.5rem 1.5rem;
+}
+}
