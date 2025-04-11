@@ -1,6 +1,7 @@
 import React, { useState } from 'react';
 import { Link } from 'react-router-dom';
 import '../../assets/styles/Header.css';
+import logo from '../../assets/images/PG_logo.png';
 
 const Header = () => {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
@@ -14,7 +15,7 @@ const Header = () => {
       <div className="header-container">
         <div className="logo">
           <Link to="/">
-            <h1>Pynacle Games</h1>
+           <img src={logo} alt="Pynacle Games Logo" className="logo-image" />
           </Link>
         </div>
         
