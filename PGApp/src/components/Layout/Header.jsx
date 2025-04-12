@@ -32,8 +32,9 @@ const Header = () => {
             <li><Link to="/" onClick={() => setIsMenuOpen(false)}>Home</Link></li>
             <li><Link to="/games" onClick={() => setIsMenuOpen(false)}>Games</Link></li>
             <li><Link to="/downloads" onClick={() => setIsMenuOpen(false)}>Downloads</Link></li>
+            <li><Link to="/connect" onClick={() => setIsMenuOpen(false)}>Connect</Link></li>
             <li><Link to="/about" onClick={() => setIsMenuOpen(false)}>About</Link></li>
-            <li><Link to="/contact" onClick={() => setIsMenuOpen(false)}>Contact</Link></li>
+            <li><a href="https://github.com/ktranfaglia1/PynacleGames" target="_blank" rel="noopener noreferrer">Source</a></li>
           </ul>
         </nav>
       </div>

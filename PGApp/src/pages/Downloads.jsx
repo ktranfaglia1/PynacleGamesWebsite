@@ -2,72 +2,61 @@ import React, { useState } from 'react';
 import '../assets/styles/Downloads.css';
 
 const Downloads = () => {
-  // Sample downloads data - replace with your actual game executables
+  // Updated downloads data with your actual games
   const allDownloads = [
     {
       id: 1,
-      title: 'Python Adventure',
+      title: 'Connect Four',
       version: '1.2.0',
       releaseDate: '2024-03-15',
-      fileSize: '24 MB',
-      description: 'A text-based adventure game with multiple endings and interactive storytelling.',
+      fileSize: '18 MB',
+      description: 'Classic two-player connection game where players drop colored discs into a vertical grid.',
       requirements: 'Windows 10/11, macOS 12+, Python 3.8+ (optional)',
-      downloadUrl: '/downloads/python-adventure.exe',
-      category: 'adventure'
+      downloadUrl: '/downloads/connect-four.exe',
+      category: 'puzzle'
     },
     {
       id: 2,
-      title: 'Snake Classic',
-      version: '2.1.5',
+      title: '2048',
+      version: '1.3.2',
       releaseDate: '2024-04-02',
-      fileSize: '18 MB',
-      description: 'A modern twist on the classic snake game with power-ups and multiple levels.',
+      fileSize: '16 MB',
+      description: 'Slide numbered tiles on a grid to combine them and create a tile with the number 2048.',
       requirements: 'Windows 10/11, macOS 12+, Python 3.8+ (optional)',
-      downloadUrl: '/downloads/snake-classic.exe',
-      category: 'arcade'
+      downloadUrl: '/downloads/2048.exe',
+      category: 'puzzle'
     },
     {
       id: 3,
-      title: 'Space Shooter',
-      version: '1.0.3',
+      title: 'Snake',
+      version: '2.0.1',
       releaseDate: '2024-03-28',
-      fileSize: '36 MB',
-      description: 'Defend your ship against waves of alien attackers in this fast-paced arcade game.',
+      fileSize: '22 MB',
+      description: 'Control a growing snake as it moves around the screen collecting food while avoiding obstacles.',
       requirements: 'Windows 10/11, macOS 12+, Python 3.8+ (optional)',
-      downloadUrl: '/downloads/space-shooter.exe',
+      downloadUrl: '/downloads/snake.exe',
       category: 'arcade'
     },
     {
       id: 4,
-      title: 'Python Quiz',
-      version: '1.1.2',
+      title: 'Tic-tac-toe',
+      version: '1.1.0',
       releaseDate: '2024-02-10',
       fileSize: '15 MB',
-      description: 'Test your knowledge with this interactive quiz game covering various topics.',
+      description: 'The classic pen-and-paper game where players take turns marking X and O on a 3×3 grid.',
       requirements: 'Windows 10/11, macOS 12+, Python 3.8+ (optional)',
-      downloadUrl: '/downloads/python-quiz.exe',
-      category: 'educational'
-    },
-    {
-      id: 5,
-      title: 'Hangman Challenge',
-      version: '1.3.0',
-      releaseDate: '2024-01-25',
-      fileSize: '20 MB',
-      description: 'The classic word-guessing game with a Python twist and various difficulty levels.',
-      requirements: 'Windows 10/11, macOS 12+, Python 3.8+ (optional)',
-      downloadUrl: '/downloads/hangman-challenge.exe',
+      downloadUrl: '/downloads/tictactoe.exe',
       category: 'puzzle'
     },
     {
-      id: 6,
-      title: 'Memory Match',
-      version: '2.0.1',
-      releaseDate: '2024-04-05',
-      fileSize: '22 MB',
-      description: 'Train your memory by matching pairs of cards in this challenging puzzle game.',
+      id: 5,
+      title: '15 Puzzle',
+      version: '1.0.3',
+      releaseDate: '2024-03-05',
+      fileSize: '17 MB',
+      description: 'Slide fifteen numbered tiles in a 4×4 grid to arrange them in numerical order.',
       requirements: 'Windows 10/11, macOS 12+, Python 3.8+ (optional)',
-      downloadUrl: '/downloads/memory-match.exe',
+      downloadUrl: '/downloads/15-puzzle.exe',
       category: 'puzzle'
     }
   ];

@@ -76,9 +76,10 @@ box-shadow: 0 0 0 2px rgba(98, 0, 234, 0.1);
 }
 
 .games-grid {
-display: grid;
-grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
-gap: 2rem;
+display: flex;
+flex-wrap: wrap;
+justify-content: center;
+gap: 3rem;
 margin-bottom: 3rem;
 width: 100%;
 }

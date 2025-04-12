@@ -6,7 +6,7 @@ import Home from './pages/Home';
 import Games from './pages/Games';
 import Downloads from './pages/Downloads';
 import About from './pages/About';
-import Contact from './pages/Contact';
+import Contact from './pages/Connect';
 import './App.css';
 
 function App() {
@@ -20,7 +20,7 @@ function App() {
             <Route path="/games" element={<Games />} />
             <Route path="/downloads" element={<Downloads />} />
             <Route path="/about" element={<About />} />
-            <Route path="/contact" element={<Contact />} />
+            <Route path="/connect" element={<Contact />} />
           </Routes>
         </main>
         <Footer />

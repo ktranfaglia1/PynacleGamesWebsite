@@ -3,28 +3,28 @@ import { Link } from 'react-router-dom';
 import '../assets/styles/Home.css';
 
 const Home = () => {
-  // Sample featured games data - replace with your actual games
+  // Featured games - selected 3 from your actual games
   const featuredGames = [
     {
       id: 1,
-      title: 'Python Adventure',
-      description: 'A text-based adventure game with multiple endings and interactive storytelling.',
-      imageUrl: '/images/game1.jpg', // Add placeholder images to public/images
-      downloadUrl: '/downloads/python-adventure.exe'
-    },
-    {
-      id: 2,
-      title: 'Snake Classic',
-      description: 'A modern twist on the classic snake game with power-ups and multiple levels.',
-      imageUrl: '/images/game2.jpg',
-      downloadUrl: '/downloads/snake-classic.exe'
+      title: 'Connect Four',
+      description: 'Classic two-player connection game where players drop colored discs into a vertical grid.',
+      imageUrl: '/images/game1.jpg',
+      downloadUrl: '/downloads/connect-four.exe'
     },
     {
       id: 3,
-      title: 'Space Shooter',
-      description: 'Defend your ship against waves of alien attackers in this fast-paced arcade game.',
+      title: 'Snake',
+      description: 'Control a growing snake as it moves around the screen collecting food while avoiding obstacles.',
       imageUrl: '/images/game3.jpg',
-      downloadUrl: '/downloads/space-shooter.exe'
+      downloadUrl: '/downloads/snake.exe'
+    },
+    {
+      id: 2,
+      title: '2048',
+      description: 'Slide numbered tiles on a grid to combine them and create a tile with the number 2048.',
+      imageUrl: '/images/game2.jpg',
+      downloadUrl: '/downloads/2048.exe'
     }
   ];
 
@@ -65,8 +65,8 @@ const Home = () => {
                     <Link to={`/games/${game.id}`} className="btn btn-sm">Learn More</Link>
                     <a href={game.downloadUrl} className="btn btn-sm btn-download">Download</a>
                   </div>
-                </div>
-              </div>
+                </div> 
+              </div> 
             ))}
           </div>
           

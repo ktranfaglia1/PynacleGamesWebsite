@@ -1,4 +1,7 @@
 .game-card {
+flex: 0 0 400px;
+max-width: 400px;
+margin-bottom: 1rem;
 background-color: white;
 border-radius: var(--border-radius-lg);
 overflow: hidden;
@@ -41,13 +44,13 @@ flex-grow: 1;
 .game-details h3 {
 color: var(--text-color);
 margin-bottom: 0.5rem;
-font-size: 1.25rem;
+font-size: 1.4rem;
 }
 
 .game-details p {
 color: var(--text-light);
 margin-bottom: 1.5rem;
-font-size: 0.9rem;
+font-size: 1rem;
 flex-grow: 1;
 }
 
@@ -67,6 +70,7 @@ margin-right: 0.5rem;
 
 @media (max-width: 768px) {
 .game-card {
+    width: 100%;
     margin: 0 auto;
 }
 }
