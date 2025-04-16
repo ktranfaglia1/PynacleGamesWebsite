@@ -3,7 +3,7 @@ import { Link } from 'react-router-dom';
 import '../../assets/styles/GameCard.css';
 
 const GameCard = ({ game }) => {
-  const { id, title, description, imageUrl, downloadUrl } = game;
+  const { id, title, description, imageUrl } = game;
   
   return (
     <div className="game-card">
@@ -15,7 +15,7 @@ const GameCard = ({ game }) => {
         <p>{description}</p>
         <div className="game-actions">
           <Link to={`/games/${id}`} className="btn btn-sm">Learn More</Link>
-          <a href={downloadUrl} className="btn btn-sm btn-download">Download</a>
+          <Link to={`/downloads?game=${id}`} className="btn btn-sm btn-download">Download</Link>
         </div>
       </div>
     </div>

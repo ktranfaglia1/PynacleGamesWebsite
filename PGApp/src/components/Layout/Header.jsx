@@ -18,15 +18,6 @@ const Header = () => {
            <img src={logo} alt="Pynacle Games Logo" className="logo-image" />
           </Link>
         </div>
-        
-        <div className="menu-toggle" onClick={toggleMenu}>
-          <div className={`hamburger ${isMenuOpen ? 'active' : ''}`}>
-            <span></span>
-            <span></span>
-            <span></span>
-          </div>
-        </div>
-        
         <nav className={`navigation ${isMenuOpen ? 'active' : ''}`}>
           <ul>
             <li><Link to="/" onClick={() => setIsMenuOpen(false)}>Home</Link></li>

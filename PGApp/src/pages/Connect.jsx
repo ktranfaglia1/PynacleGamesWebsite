@@ -1,66 +1,68 @@
 import React from 'react';
 import '../assets/styles/Connect.css';
+import headshot from '../assets/images/Headshot.jpg';
 
-const Contact = () => {
+const Connect = () => {
   return (
-    <div className="contact-page">
-      <div className="contact-header">
+    <div className="connect-page">
+      <div className="connect-header">
         <div className="container">
-          <h1>Contact Us</h1>
-          <p>Get in touch with the Pynacle Games team</p>
+          <h1>Connect with the Creator</h1>
+          <p>The person behind Pynacle Games</p>
         </div>
       </div>
 
       <div className="container">
-        <div className="contact-content">
-          <div className="contact-info">
-            <h2>Let's Connect</h2>
-            <p>Have questions about our games? Want to report a bug or suggest a feature? 
-               We'd love to hear from you!</p>
-            
-            <div className="contact-methods">
-              <div className="contact-method">
-                <h3>Email</h3>
-                <p><a href="mailto:contact@pynaclegames.com">contact@pynaclegames.com</a></p>
-              </div>
-              
-              <div className="contact-method">
-                <h3>Social Media</h3>
-                <p>Follow us on <a href="#">Twitter</a> or <a href="#">GitHub</a></p>
-              </div>
-              
-              <div className="contact-method">
-                <h3>Discord</h3>
-                <p>Join our <a href="#">community Discord</a> to chat with other players</p>
-              </div>
-            </div>
+        <div className="creator-profile">
+          <div className="creator-image">
+            {/* Replace with your actual image path */}
+            <img src={headshot} alt="Creator"/>
           </div>
           
-          <div className="contact-form-container">
-            <h2>Send a Message</h2>
-            <form className="contact-form">
-              <div className="form-group">
-                <label htmlFor="name">Name</label>
-                <input type="text" id="name" name="name" placeholder="Your name" required />
-              </div>
-              
-              <div className="form-group">
-                <label htmlFor="email">Email</label>
-                <input type="email" id="email" name="email" placeholder="Your email" required />
-              </div>
-              
-              <div className="form-group">
-                <label htmlFor="subject">Subject</label>
-                <input type="text" id="subject" name="subject" placeholder="What's this about?" required />
-              </div>
-              
-              <div className="form-group">
-                <label htmlFor="message">Message</label>
-                <textarea id="message" name="message" rows="5" placeholder="Your message" required></textarea>
-              </div>
-              
-              <button type="submit" className="btn btn-primary">Send Message</button>
-            </form>
+          <div className="creator-info">
+            <h2>Creator: Kyle Tranfaglia</h2>
+            <p className="creator-bio">
+              I'm a proud Salisbury University alumnus with dual Bachelor of Science degrees in Computer Science and Data Science. 
+              My journey with Pynacle Games began during my senior year when I developed the 15 Puzzle as part of my AI coursework. 
+              That initial project ignited my passion for game development using Python and PyQt for creating intuitive user interfaces.
+            </p>
+            
+            <p className="creator-bio">
+              What started as an academic exercise quickly evolved into an exploration of gaming principles, from optimality and 
+              solvability in puzzle games to designing engaging experiences across different game genres. I'm particularly 
+              passionate about crafting accessible, user-friendly interfaces that enhance the gaming experience for players of all skill levels.
+            </p>
+            
+            <div className="creator-links">
+              <h3>Connect with Me</h3>
+              <ul>
+                <li>
+                  <a href="https://github.com/ktranfaglia1" target="_blank" rel="noopener noreferrer">
+                    <i className="icon-github"></i> GitHub
+                  </a>
+                </li>
+                <li>
+                  <a href="https://www.linkedin.com/in/kyle-tranfaglia-6564b42a4/" target="_blank" rel="noopener noreferrer">
+                    <i className="icon-linkedin"></i> LinkedIn
+                  </a>
+                </li>
+                <li>
+                  <a href="https://kyletranfaglia.top/" target="_blank" rel="noopener noreferrer">
+                    <i className="icon-globe"></i> Portfolio Website
+                  </a>
+                </li>
+                <li>
+                  <a href="mailto:kyletranfaglia@gmail.com">
+                    <i className="icon-envelope"></i> kyletranfaglia@gmail.com
+                  </a>
+                </li>
+              </ul>
+            </div>
+            
+            <div className="creator-message">
+              <p>I'm always open to feedback and suggestions for new games or improvements to existing ones.</p>
+              <p>Feel free to reach out through any of the channels above!</p>
+            </div>
           </div>
         </div>
       </div>
@@ -68,4 +70,4 @@ const Contact = () => {
   );
 };
 
-export default Contact;
+export default Connect;

@@ -10,21 +10,18 @@ const Home = () => {
       title: 'Connect Four',
       description: 'Classic two-player connection game where players drop colored discs into a vertical grid.',
       imageUrl: '/images/game1.jpg',
-      downloadUrl: '/downloads/connect-four.exe'
     },
     {
       id: 3,
       title: 'Snake',
       description: 'Control a growing snake as it moves around the screen collecting food while avoiding obstacles.',
       imageUrl: '/images/game3.jpg',
-      downloadUrl: '/downloads/snake.exe'
     },
     {
       id: 2,
       title: '2048',
       description: 'Slide numbered tiles on a grid to combine them and create a tile with the number 2048.',
       imageUrl: '/images/game2.jpg',
-      downloadUrl: '/downloads/2048.exe'
     }
   ];
 
@@ -37,8 +34,8 @@ const Home = () => {
             <h1>Welcome to Pynacle Games</h1>
             <p>A collection of fun and engaging games built with Python</p>
             <div className="hero-buttons">
-              <Link to="/games" className="btn btn-primary">Explore Games</Link>
-              <Link to="/downloads" className="btn btn-secondary">Download Now</Link>
+            <Link to="/games" onClick={() => setIsMenuOpen(false)} className="btn btn-primary">Explore Games</Link>
+            <Link to="/downloads" onClick={() => setIsMenuOpen(false)} className="btn btn-secondary">Download Now</Link>
             </div>
           </div>
         </div>
@@ -51,7 +48,6 @@ const Home = () => {
             <h2>Featured Games</h2>
             <p>Check out some of our most popular Python games</p>
           </div>
-          
           <div className="game-cards">
             {featuredGames.map(game => (
               <div className="game-card" key={game.id}>
@@ -63,7 +59,7 @@ const Home = () => {
                   <p>{game.description}</p>
                   <div className="game-actions">
                     <Link to={`/games/${game.id}`} className="btn btn-sm">Learn More</Link>
-                    <a href={game.downloadUrl} className="btn btn-sm btn-download">Download</a>
+                    <Link to={`/downloads?game=${game.id}`} className="btn btn-sm btn-download">Download</Link>
                   </div>
                 </div> 
               </div> 
@@ -71,7 +67,7 @@ const Home = () => {
           </div>
           
           <div className="view-all">
-            <Link to="/games" className="btn btn-outline">View All Games</Link>
+          <Link to="/games" onClick={() => setIsMenuOpen(false)} className="btn btn-outline">View All Games</Link>
           </div>
         </div>
       </section>
@@ -82,7 +78,7 @@ const Home = () => {
           <div className="cta-content">
             <h2>Ready to Play?</h2>
             <p>Download our games and start playing today!</p>
-            <Link to="/downloads" className="btn btn-cta">Get Started</Link>
+            <Link to="/downloads" onClick={() => setIsMenuOpen(false)} className="btn btn-cta">Get Started</Link>
           </div>
         </div>
       </section>
