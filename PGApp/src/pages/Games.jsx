@@ -101,7 +101,7 @@ const Games = () => {
           </div>
         ) : (
           <div className="no-games">
-            <h3>No games found</h3>
+            <h3>No Games Found</h3>
             <p>Try changing your filters or search term</p>
           </div>
         )}

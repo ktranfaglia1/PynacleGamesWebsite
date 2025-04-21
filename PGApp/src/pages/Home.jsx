@@ -44,8 +44,11 @@ const Home = () => {
       {/* Featured Games Section */}
       <section className="featured-games">
         <div className="container">
+          <div className="slogan">
+            <h2>Enjoy the Peak of Python Gaming!</h2>
+          </div>
           <div className="section-header">
-            <h2>Featured Games</h2>
+            <h1>Featured Games</h1>
             <p>Check out some of our most popular Python games</p>
           </div>
           <div className="game-cards">
@@ -65,9 +68,8 @@ const Home = () => {
               </div> 
             ))}
           </div>
-          
           <div className="view-all">
-          <Link to="/games" onClick={() => setIsMenuOpen(false)} className="btn btn-outline">View All Games</Link>
+            <Link to="/games" onClick={() => setIsMenuOpen(false)} className="btn btn-outline">View All Games</Link>
           </div>
         </div>
       </section>

@@ -7,11 +7,13 @@ import Games from './pages/Games';
 import Downloads from './pages/Downloads';
 import About from './pages/About';
 import Contact from './pages/Connect';
+import ScrollToTop from './components/UI/ScrollToTop';
 import './App.css';
 
 function App() {
   return (
     <Router>
+      <ScrollToTop />
       <div className="app">
         <Header />
         <main className="main-content">

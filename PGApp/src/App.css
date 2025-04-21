@@ -3,19 +3,22 @@
 
 /* Variables */
 :root {
-/* Color Scheme - Modern with gaming feel */
---primary-color: #6200ea;
---primary-light: #9d46ff;
---primary-dark: #0a00b6;
---secondary-color: #00e676;
---secondary-light: #66ffa6;
---secondary-dark: #00b248;
---background-color: #f5f5f7;
---dark-background: #121212;
---text-color: #333;
---text-light: #757575;
---text-white: #ffffff;
---accent-color: #ff3d00;
+  --primary-color: #6200ea;
+  --primary-light: #9d46ff;
+  --primary-dark: #0a00b6;
+  --secondary-color: #00e676;
+  --secondary-light: #66ffa6;
+  --secondary-dark: #00b248;
+  --accent-color: #ff3d00;
+  --accent-light: #ff6333;
+  --background-color: #f5f5f7;
+  --dark-background: #121212;
+  --text-color: #333;
+  --text-light: #757575;
+  --text-white: #ffffff;
+  
+  /* Button hover background colors */
+  --btn-outline-hover-bg: rgba(98, 0, 234, 0.1);
 
 /* Typography */
 --font-main: 'Poppins', sans-serif;
@@ -139,18 +142,25 @@ letter-spacing: 0.5px;
 }
 
 .btn:hover {
-background-color: var(--primary-light);
-box-shadow: var(--shadow-md);
-transform: translateY(-2px);
+  box-shadow: var(--shadow-md);
+  transform: translateY(-2px);
 }
 
 .btn-primary {
 background-color: var(--primary-color);
-color: white;
+color: var(--text-white);
+}
+.btn-primary:hover {
+background-color: var(--primary-light);
+color: var(--text-white);
 }
 
 .btn-secondary {
 background-color: var(--secondary-color);
+color: var(--text-color);
+}
+.btn-secondary:hover {
+background-color: var(--secondary-light);
 color: var(--text-color);
 }
 
@@ -159,22 +169,41 @@ background-color: transparent;
 border: 2px solid var(--primary-color);
 color: var(--primary-color);
 }
-
-.btn-sm {
-padding: 0.5rem 1rem;
-font-size: 0.875rem;
+.btn-outline:hover {
+background-color: var(--btn-outline-hover-bg);
+border-color: var(--primary-light);
+color: var(--primary-light);
 }
 
 .btn-download {
 background-color: var(--secondary-color);
 color: var(--text-color);
 }
+.btn-download:hover {
+background-color: var(--secondary-light);
+color: var(--text-color);
+}
 
 .btn-cta {
 background-color: var(--accent-color);
-color: white;
+color: var(--text-white);
 font-weight: 600;
 padding: 1rem 2rem;
+}
+.btn-cta:hover {
+background-color: var(--accent-light);
+color: var(--text-white);
+transform: scale(1.05);
+}
+
+.btn-sm {
+padding: 0.5rem 1rem;
+font-size: 0.875rem;
+}
+
+.game-actions .btn:not(.btn-download):hover {
+background-color: var(--primary-light);
+color: var(--text-white);
 }
 
 .section-header {

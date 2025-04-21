@@ -1,6 +1,7 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
 import '../../assets/styles/Footer.css';
+import logo from '../../assets/images/PG_logo2.jpg';
 
 const Footer = () => {
   const currentYear = new Date().getFullYear();
@@ -11,8 +12,9 @@ const Footer = () => {
         <div className="footer-logo">
           <h2>Pynacle Games</h2>
           <p>Enjoy the peak of Python gaming</p>
+          <img src={logo} alt="Pynacle Games Logo" className="footer-logo-image" />
         </div>
-        
+
         <div className="footer-links">
           <div className="footer-column navigation">
             <h3>Pynacle Navigation</h3>

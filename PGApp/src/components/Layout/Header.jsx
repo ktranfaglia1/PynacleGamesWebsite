@@ -1,7 +1,7 @@
 import React, { useState } from 'react';
 import { Link } from 'react-router-dom';
 import '../../assets/styles/Header.css';
-import logo from '../../assets/images/PG_logo.png';
+import logo from '../../assets/images/PG_logo2.jpg';
 
 const Header = () => {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
@@ -15,7 +15,7 @@ const Header = () => {
       <div className="header-container">
         <div className="logo">
           <Link to="/">
-           <img src={logo} alt="Pynacle Games Logo" className="logo-image" />
+            <img src={logo} alt="Pynacle Games Logo" className="logo-image" />
           </Link>
         </div>
         <nav className={`navigation ${isMenuOpen ? 'active' : ''}`}>

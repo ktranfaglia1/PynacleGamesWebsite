@@ -1,22 +1,27 @@
 .footer {
-background-color: var(--dark-background);
+background-color: #010504;
 color: var(--text-white);
 }
 
 .footer-container {
 width: 100%;
 margin: 0 auto;
-padding: 3rem 2rem 2rem;
+padding-top: 2rem;
 display: grid;
 grid-template-columns: 1fr 2fr;
-gap: 3rem;
+gap: 4rem;
+}
+
+.footer-logo {
+justify-content: center;
+text-align: center;
 }
 
 .footer-logo h2 {
 font-family: var(--font-accent);
-font-size: 1.7rem;
+font-size: 1.8rem;
 margin-bottom: 1rem;
-background: linear-gradient(90deg, var(--primary-light), var(--secondary-light));
+background: linear-gradient(180deg, var(--primary-light), var(--secondary-light));
 -webkit-background-clip: text;
 background-clip: text;
 -webkit-text-fill-color: transparent;
@@ -112,6 +117,12 @@ border-top: 1px solid rgba(255, 255, 255, 0.1);
 color: var(--text-light);
 font-size: 0.9rem;
 margin: 0;
+}
+
+.footer-logo-image {
+height: 108px;
+width: auto;
+filter: brightness(1.8) contrast(1.4);
 }
 
 /* Responsive */

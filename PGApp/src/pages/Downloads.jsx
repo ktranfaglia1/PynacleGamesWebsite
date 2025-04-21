@@ -145,7 +145,7 @@ const Downloads = () => {
               <li>Storage: 250MB minimum free space (All Games)</li>
               <li>RAM: 4GB minimum (8GB recommended)</li>
               <li>No Python installation required (all dependencies are bundled in the executable)</li>
-              <li>Source Code Only: Python 3.9 with dependencies located in requirements.txt</li>
+              <li>Source Code Only: Python 3.9 for PyQt5 games and Python 3.11 for Pyside6 games with dependencies located in requirements.txt</li>
             </ul>
           </div>
         </div>
