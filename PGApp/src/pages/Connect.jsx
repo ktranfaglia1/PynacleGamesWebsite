@@ -22,9 +22,9 @@ const Connect = () => {
           <div className="creator-info">
             <h2>Creator: Kyle Tranfaglia</h2>
             <p className="creator-bio">
-              I'm a proud Salisbury University alumnus with dual Bachelor of Science degrees in Computer Science and Data Science. 
+              I'm a Salisbury University alumnus with dual Bachelor of Science degrees in Computer Science and Data Science. 
               My journey with Pynacle Games began during my senior year when I developed the 15 Puzzle as part of my AI coursework. 
-              That initial project ignited my passion for game development using Python and PyQt for creating intuitive user interfaces.
+              That initial project ignited my passion for game development using Python and PyQt/PySide for creating intuitive user interfaces.
             </p>
             
             <p className="creator-bio">
