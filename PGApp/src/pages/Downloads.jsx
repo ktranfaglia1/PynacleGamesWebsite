@@ -10,8 +10,9 @@ const Downloads = () => {
       title: 'Connect Four',
       releaseDate: '2024-03-15',
       fileSize: '18 MB',
-      description: 'Classic two-player connection game where players drop colored discs into a vertical grid.',
-      downloadUrl: '/downloads/connect-four.exe',
+      description: 'Classic two-player connection game where players drop colored discs into a vertical grid, each trying to be the first to form a line of four of their own colored pieces.',
+      windowsUrl: '/downloads/connect-four.exe',
+      linuxUrl: '/downloads/connect-four.AppImage',
       category: 'puzzle'
     },
     {
@@ -19,8 +20,9 @@ const Downloads = () => {
       title: '2048',
       releaseDate: '2024-04-02',
       fileSize: '16 MB',
-      description: 'Slide numbered tiles on a grid to combine them and create a tile with the number 2048.',
+      description: 'Slide numbered tiles on a 4×4 grid, merging identical values to create higher numbers with the ultimate goal of reaching the elusive 2048 tile.',
       downloadUrl: '/downloads/2048.exe',
+      linuxUrl: '/downloads/connect-four.AppImage',
       category: 'puzzle'
     },
     {
@@ -28,8 +30,9 @@ const Downloads = () => {
       title: 'Snake',
       releaseDate: '2024-03-28',
       fileSize: '22 MB',
-      description: 'Control a growing snake as it moves around the screen collecting food while avoiding obstacles.',
+      description: 'Control a growing serpent that slithers around the screen, consuming various pellets while avoiding collisions with itself and the boundaries.',
       downloadUrl: '/downloads/snake.exe',
+      linuxUrl: '/downloads/connect-four.AppImage',
       category: 'arcade'
     },
     {
@@ -37,8 +40,9 @@ const Downloads = () => {
       title: 'Tic-tac-toe',
       releaseDate: '2024-02-10',
       fileSize: '15 MB',
-      description: 'The classic pen-and-paper game where players take turns marking X and O on a 3×3 grid.',
+      description: 'The classic pen-and-paper game where players take turns marking X and O on a 3×3 grid, each trying to be the first to place three of their symbols in a row.',
       downloadUrl: '/downloads/tictactoe.exe',
+      linuxUrl: '/downloads/connect-four.AppImage',
       category: 'puzzle'
     },
     {
@@ -46,8 +50,9 @@ const Downloads = () => {
       title: '15 Puzzle',
       releaseDate: '2024-03-05',
       fileSize: '17 MB',
-      description: 'Slide fifteen numbered tiles in a 4×4 grid to arrange them in numerical order.',
+      description:'Slide 15 numbered tiles around a 4×4 grid by swapping them with an empty space, rearranging the scrambled pieces into numerical order.',
       downloadUrl: '/downloads/15-puzzle.exe',
+      linuxUrl: '/downloads/connect-four.AppImage',
       category: 'puzzle'
     }
   ];
@@ -110,7 +115,6 @@ const Downloads = () => {
         <div className="container">
           <h1>Game Downloads</h1>
           <p>Download our Python games as standalone executables</p>
-          <p>No installation required!</p>
         </div>
       </div>
 
@@ -126,7 +130,6 @@ const Downloads = () => {
               <li>Consider making a shortcut to place on your desktop!
                 <ul>
                   <li><strong>Windows:</strong> Right-click the game executable in its folder, select "Send to" → "Desktop (create shortcut)"</li>
-                  <li><strong>macOS:</strong> Hold down Command (⌘) + Option (Alt) while dragging the app to your Desktop to create an alias</li>
                   <li><strong>Linux:</strong> Right-click the executable, select "Create Link" or "Make Link", then move the link to your Desktop</li>
                 </ul>
               </li>
@@ -139,8 +142,8 @@ const Downloads = () => {
               <li>Operating System:</li>
               <ul>
                   <li><strong>Windows:</strong> Windows 10/11</li>
-                  <li><strong>macOS:</strong> macOS 10.15+</li>
                   <li><strong>Linux:</strong> Ubuntu 20.04+ recommended</li>
+                  <li><strong>MacOS:</strong> Not currently supported</li>
               </ul>
               <li>Storage: 250MB minimum free space (All Games)</li>
               <li>RAM: 4GB minimum (8GB recommended)</li>
@@ -187,9 +190,16 @@ const Downloads = () => {
                     <span className="info-value">{download.releaseDate}</span>
                   </div>
                 </div>
-                <a href={download.downloadUrl} className="btn btn-download">
-                  Download Now
-                </a>
+                
+                {/* Download buttons container */}
+                <div className="download-buttons">
+                  <a href={download.windowsUrl} className="btn btn-download">
+                    <span className="btn-icon">🪟</span> Windows
+                  </a>
+                  <a href={download.linuxUrl} className="btn btn-download linux">
+                    <span className="btn-icon">🐧</span> Linux
+                  </a>
+                </div>
               </div>
             </div>
           ))}

@@ -3,17 +3,17 @@ min-height: calc(100vh - 60px);
 }
 
 .downloads-header {
-background: linear-gradient(135deg, var(--secondary-dark), var(--secondary-color));
+background: linear-gradient(135deg, var(--primary-dark), var(--primary-color));
 padding: 4rem 0;
 text-align: center;
-color: var(--text-color);
-margin-bottom: 3rem;
+color: var(--text-white);
+margin-bottom: 2rem;
 }
 
 .downloads-header h1 {
 font-size: 2.5rem;
 margin-bottom: 1rem;
-color: var(--dark-background);
+color: var(--text-white);
 }
 
 .downloads-header p {
@@ -186,20 +186,34 @@ color: var(--text-light);
 font-size: 0.9rem;
 }
 
-.btn-download {
-background-color: var(--secondary-color);
-color: var(--text-color);
-padding: 0.75rem 1.5rem;
-display: inline-block;
-font-weight: 500;
-border-radius: var(--border-radius-md);
-transition: all 0.3s ease;
-text-align: center;
+.download-buttons {
+display: flex;
+gap: 1rem;
+flex-wrap: wrap;
+justify-content: flex-start;
 }
 
-.btn-download:hover {
-background-color: var(--secondary-light);
-transform: translateY(-2px);
+.download-buttons .btn {
+width: 180px;
+height: 45px;
+display: flex;
+justify-content: center;
+align-items: center;
+flex: none; 
+}
+
+.btn-icon {
+margin-right: 0.5rem;
+}
+
+.btn-download.linux {
+background-color: #333;
+color: white;
+}
+
+.btn-download.linux:hover {
+background-color: #444;
+color: white;
 }
 
 /* Responsive */

@@ -1,7 +1,7 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
 import '../../assets/styles/Footer.css';
-import logo from '../../assets/images/PG_logo2.jpg';
+import logo from '../../assets/images/PG_logo.jpg';
 
 const Footer = () => {
   const currentYear = new Date().getFullYear();

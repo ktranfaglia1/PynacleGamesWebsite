@@ -8,20 +8,20 @@ const Home = () => {
     {
       id: 1,
       title: 'Connect Four',
-      description: 'Classic two-player connection game where players drop colored discs into a vertical grid.',
+      description: 'Classic two-player connection game where players drop colored discs into a vertical grid, each trying to be the first to form a line of four of their own colored pieces.',
       imageUrl: '/images/game1.jpg',
-    },
-    {
-      id: 3,
-      title: 'Snake',
-      description: 'Control a growing snake as it moves around the screen collecting food while avoiding obstacles.',
-      imageUrl: '/images/game3.jpg',
     },
     {
       id: 2,
       title: '2048',
-      description: 'Slide numbered tiles on a grid to combine them and create a tile with the number 2048.',
+      description: 'Slide numbered tiles on a 4×4 grid, merging identical values to create higher numbers with the ultimate goal of reaching the elusive 2048 tile.',
       imageUrl: '/images/game2.jpg',
+    },
+    {
+      id: 3,
+      title: 'Snake',
+      description: 'Control a growing serpent that slithers around the screen, consuming various pellets while avoiding collisions with itself and the boundaries.',
+      imageUrl: '/images/game3.jpg',
     }
   ];
 

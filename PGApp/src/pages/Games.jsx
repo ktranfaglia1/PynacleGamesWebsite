@@ -8,41 +8,36 @@ const Games = () => {
     {
       id: 1,
       title: 'Connect Four',
-      description: 'Classic two-player connection game where players drop colored discs into a vertical grid.',
+      description: 'Classic two-player connection game where players drop colored discs into a vertical grid, each trying to be the first to form a line of four of their own colored pieces.',
       imageUrl: '/images/game1.jpg',
-      downloadUrl: '/downloads/connect-four.exe',
       category: 'puzzle'
     },
     {
       id: 2,
       title: '2048',
-      description: 'Slide numbered tiles on a grid to combine them and create a tile with the number 2048.',
+      description: 'Slide numbered tiles on a 4×4 grid, merging identical values to create higher numbers with the ultimate goal of reaching the elusive 2048 tile.',
       imageUrl: '/images/game2.jpg',
-      downloadUrl: '/downloads/2048.exe',
       category: 'puzzle'
     },
     {
       id: 3,
       title: 'Snake',
-      description: 'Control a growing snake as it moves around the screen collecting food while avoiding obstacles.',
+      description: 'Control a growing serpent that slithers around the screen, consuming various pellets while avoiding collisions with itself and the boundaries.',
       imageUrl: '/images/game3.jpg',
-      downloadUrl: '/downloads/snake.exe',
       category: 'arcade'
     },
     {
       id: 4,
       title: 'Tic-tac-toe',
-      description: 'The classic pen-and-paper game where players take turns marking X and O on a 3×3 grid.',
+      description: 'The classic pen-and-paper game where players take turns marking X and O on a 3×3 grid, each trying to be the first to place three of their symbols in a row.',
       imageUrl: '/images/game4.jpg',
-      downloadUrl: '/downloads/tictactoe.exe',
       category: 'puzzle'
     },
     {
       id: 5,
       title: '15 Puzzle',
-      description: 'Slide fifteen numbered tiles in a 4×4 grid to arrange them in numerical order.',
+      description:'Slide 15 numbered tiles around a 4×4 grid by swapping them with an empty space, rearranging the scrambled pieces into numerical order.',
       imageUrl: '/images/game5.jpg',
-      downloadUrl: '/downloads/15-puzzle.exe',
       category: 'puzzle'
     }
   ];

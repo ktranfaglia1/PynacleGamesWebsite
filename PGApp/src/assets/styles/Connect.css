@@ -3,11 +3,11 @@ padding-bottom: 60px;
 }
 
 .connect-header {
-background: linear-gradient(135deg, #6a11cb 0%, #2575fc 100%);
+background: linear-gradient(135deg, var(--secondary-dark), var(--secondary-color));
 color: white;
-padding: 60px 0;
+padding: 4rem 0;
 text-align: center;
-margin-bottom: 40px;
+margin-bottom: 2rem;
 }
 
 .connect-header h1 {
@@ -58,7 +58,7 @@ margin-bottom: 20px;
 font-size: 1.1rem;
 line-height: 1.6;
 margin-bottom: 25px;
-margin-right: 100px;
+margin-right: 120px;
 color: #555;
 }
 
@@ -77,7 +77,7 @@ list-style: none;
 padding: 0;
 display: grid;
 grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
-gap: 15px;
+gap: 10px;
 }
 
 .creator-links li a {
@@ -93,9 +93,8 @@ transition: color 0.2s;
 color: #6a11cb;
 }
 
-.creator-links li a i {
-margin-right: 8px;
-font-size: 1.2rem;
+.creator-links li a {
+font-size: 1rem;
 }
 
 .creator-message {

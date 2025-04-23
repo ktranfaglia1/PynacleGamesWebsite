@@ -37,7 +37,7 @@ flex-wrap: wrap;
 }
 
 .section-header p {
-    font-size: 20px;
+font-size: 1.2rem;
 }
 
 /* Featured Games Section */
@@ -105,7 +105,7 @@ margin-top: 3rem;
 /* Call to Action Section */
 .cta-section {
 background: linear-gradient(135deg, var(--secondary-dark), var(--secondary-color));
-padding: 5rem 2rem;
+padding: 4rem 2rem;
 text-align: center;
 color: var(--text-color);
 }
@@ -121,8 +121,8 @@ margin-bottom: 1rem;
 }
 
 .cta-section p {
-margin-bottom: 2rem;
 font-size: 1.2rem;
+margin-bottom: 2rem;
 }
 
 .btn-cta {
