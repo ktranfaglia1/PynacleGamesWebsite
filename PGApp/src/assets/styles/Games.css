@@ -4,7 +4,7 @@ width: 100%;
 }
 
 .games-header {
-background: linear-gradient(135deg, var(--secondary-dark), var(--secondary-color));
+background: linear-gradient(135deg, var(--primary-dark), var(--primary-color));
 padding: 4rem 0;
 text-align: center;
 color: var(--text-white);
@@ -20,7 +20,7 @@ margin-bottom: 1rem;
 .games-header p {
 max-width: 800px;
 margin: 0 auto;
-font-size: 1.2rem;
+font-size: 1.3rem;
 opacity: 0.9;
 }
 

@@ -7,6 +7,7 @@ import Games from './pages/Games';
 import Downloads from './pages/Downloads';
 import About from './pages/About';
 import Contact from './pages/Connect';
+import Learn from './pages/Learn';
 import ScrollToTop from './components/UI/ScrollToTop';
 import './App.css';
 
@@ -23,6 +24,7 @@ function App() {
             <Route path="/downloads" element={<Downloads />} />
             <Route path="/about" element={<About />} />
             <Route path="/connect" element={<Contact />} />
+            <Route path="/learn" element={<Learn />} />
           </Routes>
         </main>
         <Footer />

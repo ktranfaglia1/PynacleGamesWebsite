@@ -1,6 +1,9 @@
 import React from 'react';
 import '../assets/styles/Connect.css';
 import headshot from '../assets/images/Headshot.jpg';
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import { faGithub, faLinkedin } from '@fortawesome/free-brands-svg-icons';
+import { faEnvelope, faGlobe } from '@fortawesome/free-solid-svg-icons';
 
 const Connect = () => {
   return (
@@ -38,22 +41,22 @@ const Connect = () => {
               <ul>
                 <li>
                   <a href="https://github.com/ktranfaglia1" target="_blank" rel="noopener noreferrer">
-                    <i className="icon-github"></i> GitHub
+                    <FontAwesomeIcon icon={faGithub} /> GitHub
                   </a>
                 </li>
                 <li>
                   <a href="https://www.linkedin.com/in/kyle-tranfaglia-6564b42a4/" target="_blank" rel="noopener noreferrer">
-                    <i className="icon-linkedin"></i> LinkedIn
+                    <FontAwesomeIcon icon={faLinkedin} /> LinkedIn
                   </a>
                 </li>
                 <li>
                   <a href="https://kyletranfaglia.top/" target="_blank" rel="noopener noreferrer">
-                    <i className="icon-globe"></i> Portfolio Website
+                    <FontAwesomeIcon icon={faGlobe} /> Portfolio Website
                   </a>
                 </li>
                 <li>
                   <a href="mailto:kyletranfaglia@gmail.com">
-                    <i className="icon-envelope"></i> kyletranfaglia@gmail.com
+                    <FontAwesomeIcon icon={faEnvelope} /> kyletranfaglia@gmail.com
                   </a>
                 </li>
               </ul>

@@ -25,7 +25,7 @@ const About = () => {
           
           <section className="about-section">
             <h2>The Games</h2>
-            <p>All games in the Pynacle collection are built using Python, specifically leveraging the PyQt5 
+            <p>All games in the Pynacle collection are built using Python, specifically leveraging the PyQt5/Pyside 
                library to create intuitive and responsive user interfaces. Our collection includes:</p>
             <ul>
               <li><strong>Puzzle Games:</strong> Games like the 15 Puzzle, 2048, and Connect Four that explore 

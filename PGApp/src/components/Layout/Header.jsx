@@ -6,10 +6,6 @@ import logo from '../../assets/images/PG_logo.jpg';
 const Header = () => {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
 
-  const toggleMenu = () => {
-    setIsMenuOpen(!isMenuOpen);
-  };
-
   return (
     <header className="header">
       <div className="header-container">

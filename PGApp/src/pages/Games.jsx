@@ -1,6 +1,12 @@
 import React, { useState } from 'react';
 import GameCard from '../components/UI/GameCard';
 import '../assets/styles/Games.css';
+import ConnectFour_logo from '../assets/images/ConnectFour_logo.png'
+import TwentyFortyEight_logo from '../assets/images/2048_logo.png'
+import Snake_logo from '../assets/images/Snake_logo.png'
+import TicTacToe_logo from '../assets/images/TicTacToe_logo.png'
+import FifteenPuzzle_logo from '../assets/images/15Puzzle_logo.png'
+import Chess_logo from '../assets/images/Chess_logo.png'
 
 const Games = () => {
   // Updated games data with your actual games
@@ -9,36 +15,43 @@ const Games = () => {
       id: 1,
       title: 'Connect Four',
       description: 'Classic two-player connection game where players drop colored discs into a vertical grid, each trying to be the first to form a line of four of their own colored pieces.',
-      imageUrl: '/images/game1.jpg',
-      category: 'puzzle'
+      imageUrl: ConnectFour_logo,
+      category: 'strategy'
     },
     {
       id: 2,
       title: '2048',
       description: 'Slide numbered tiles on a 4×4 grid, merging identical values to create higher numbers with the ultimate goal of reaching the elusive 2048 tile.',
-      imageUrl: '/images/game2.jpg',
+      imageUrl: TwentyFortyEight_logo,
       category: 'puzzle'
     },
     {
       id: 3,
       title: 'Snake',
       description: 'Control a growing serpent that slithers around the screen, consuming various pellets while avoiding collisions with itself and the boundaries.',
-      imageUrl: '/images/game3.jpg',
+      imageUrl: Snake_logo,
       category: 'arcade'
     },
     {
       id: 4,
       title: 'Tic-tac-toe',
       description: 'The classic pen-and-paper game where players take turns marking X and O on a 3×3 grid, each trying to be the first to place three of their symbols in a row.',
-      imageUrl: '/images/game4.jpg',
-      category: 'puzzle'
+      imageUrl: TicTacToe_logo,
+      category: 'strategy'
     },
     {
       id: 5,
-      title: '15 Puzzle',
+      title: '15-Puzzle',
       description:'Slide 15 numbered tiles around a 4×4 grid by swapping them with an empty space, rearranging the scrambled pieces into numerical order.',
-      imageUrl: '/images/game5.jpg',
+      imageUrl: FifteenPuzzle_logo,
       category: 'puzzle'
+    },
+    {
+      id: 6,
+      title: 'Chess',
+      description:'A strategic game played on an 8×8 checkered grid where two opponents battle to trap the enemy king using an army of pieces with distinct movement patterns.',
+      imageUrl: Chess_logo,
+      category: 'strategy'
     }
   ];
 

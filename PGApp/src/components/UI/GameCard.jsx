@@ -14,7 +14,7 @@ const GameCard = ({ game }) => {
         <h3>{title}</h3>
         <p>{description}</p>
         <div className="game-actions">
-          <Link to={`/games/${id}`} className="btn btn-sm">Learn More</Link>
+          <Link to={`/learn#${id}`} className="btn btn-sm">Learn More</Link>
           <Link to={`/downloads?game=${id}`} className="btn btn-sm btn-download">Download</Link>
         </div>
       </div>
