@@ -51,7 +51,7 @@ const Learn = () => {
                 numbered tiles to create larger numbers, with the ultimate goal of reaching the 2048 tile. This version goes 
                 beyond the basic gameplay with an intelligent AI solver that can automatically play the game using advanced 
                 heuristic algorithms.</p>
-            <p>The game features a complex scoring system, multiple move tracking, and a high-score tracking mechanism. 
+            <p>The game features a complex scoring system, move tracking, and a high-score tracking mechanism. 
                 The AI solver uses sophisticated evaluation methods, including calculating board monotonicity, merge potential, 
                 and smoothness. Players can watch the AI solve the puzzle or play manually, with the game providing real-time 
                 move and score tracking. The visually appealing tile design and responsive controls make this a standout 
@@ -63,8 +63,8 @@ const Learn = () => {
             <p>This modern take on the classic Snake game introduces several innovative gameplay elements. Beyond the traditional 
                 snake-growing mechanics, the game features multiple types of apples that add strategic depth. Green apples are 
                 standard, silver apples offer more points, and gold apples provide the highest score. A unique purple "poison" 
-                apple adds an extra layer of challenge, removing half the snake's body when consumed.</p>
-            <p>The game includes a sophisticated scoring system, with different apple types awarding varying point values. The 
+                apple adds an extra exciting element, removing half the snake's body when consumed.</p>
+            <p>The game includes an enhanced scoring system, with different apple types awarding varying point values. The 
                 snake's speed increases as it grows, adding progressively more difficulty. A high score tracking system allows 
                 players to save and review their best performances. The sleek, minimalist design and responsive controls make this 
                 version of Snake both nostalgic and modern.</p>
@@ -105,7 +105,7 @@ const Learn = () => {
                 move history panel allows players to track every move made during the game. The board can be flipped, providing different 
                 perspectives for players. The control panel includes convenient options like undoing moves and starting a new game, 
                 making the experience more flexible and user-friendly. The game uses the powerful chess Python library to handle complex 
-                chess logic, ensuring accurate move validation and game state tracking.</p>              
+                chess logic, ensuring accurate move validation and game state tracking at all time.</p>              
           </section>
         </div>
       </div>
