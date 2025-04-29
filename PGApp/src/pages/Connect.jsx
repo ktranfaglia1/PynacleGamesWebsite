@@ -18,7 +18,6 @@ const Connect = () => {
       <div className="container">
         <div className="creator-profile">
           <div className="creator-image">
-            {/* Replace with your actual image path */}
             <img src={headshot} alt="Creator"/>
           </div>
           

@@ -9,7 +9,6 @@ import FifteenPuzzle_logo from '../assets/images/15Puzzle_logo.png'
 import Chess_logo from '../assets/images/Chess_logo.png'
 
 const Games = () => {
-  // Updated games data with your actual games
   const allGames = [
     {
       id: 1,

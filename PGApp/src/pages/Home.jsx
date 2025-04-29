@@ -6,7 +6,7 @@ import TwentyFortyEight_logo from '../assets/images/2048_logo.png'
 import Snake_logo from '../assets/images/Snake_logo.png'
 
 const Home = () => {
-  // Featured games - selected 3 from your actual games
+  // Featured games
   const featuredGames = [
     {
       id: 1,

@@ -3,7 +3,6 @@ import { useLocation } from 'react-router-dom';
 import '../assets/styles/Downloads.css';
 
 const Downloads = () => {
-  // Updated downloads data with your actual games
   const allDownloads = [
     {
       id: 1,
