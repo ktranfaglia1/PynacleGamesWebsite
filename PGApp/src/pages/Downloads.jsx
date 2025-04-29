@@ -70,6 +70,17 @@ const Downloads = () => {
       windowsUrl: '/downloads/Chess.exe',
       linuxUrl: '/downloads/Chess.AppImage',
       category: 'strategy'
+    },
+    {
+      id: 7, 
+      title: 'All Games',
+      releaseDate: '2025-04-29',
+      windowsSize: '305 MB',
+      linuxSize: '294 MB',
+      description:'The entire Pynacle Games collection, all bundled up into one zip file.',
+      windowsUrl: '/downloads/AllWindowsGames.zip',
+      linuxUrl: '/downloads/AllLinuxGames.zip',
+      category: 'all-games'
     }
   ];
 
@@ -114,11 +125,19 @@ const Downloads = () => {
 
   // Filter downloads based on category
   const filteredDownloads = allDownloads.filter(download => {
-    return activeCategory === 'all' || download.category === activeCategory;
+    if (activeCategory === 'all') {
+      // When "all" is selected, show everything
+      return true;
+    } else {
+      // For specific categories, exclude items with the "all-games" category
+      return download.category === activeCategory && download.category !== 'all-games';
+    }
   });
 
   // Get unique categories
-  const categories = ['all', ...new Set(allDownloads.map(download => download.category))];
+  const categories = ['all', ...new Set(allDownloads
+    .filter(download => download.category !== 'all-games')
+    .map(download => download.category))];
 
   // Toggle expanded state
   const toggleExpand = (id) => {
@@ -162,7 +181,7 @@ const Downloads = () => {
                   <li><strong>Linux:</strong> Ubuntu 20.04+ recommended</li>
                   <li><strong>MacOS:</strong> Not currently supported</li>
               </ul>
-              <li>Storage: 300MB minimum free space (All Games)</li>
+              <li>Storage: ~300MB minimum free space (All Games)</li>
               <li>RAM: 4GB minimum (8GB recommended)</li>
               <li>No Python installation required (all dependencies are bundled in the executable)</li>
               <li>Source Code Only: Python 3.9 for PyQt5 games and Python 3.11 for Pyside6 games with dependencies located in requirements.txt</li>

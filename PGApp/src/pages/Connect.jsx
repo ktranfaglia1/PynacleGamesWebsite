@@ -63,7 +63,7 @@ const Connect = () => {
             </div>
             
             <div className="creator-message">
-              <p>I'm always open to feedback and suggestions for new games or improvements to existing ones.</p>
+              <p>I'm open to feedback and suggestions for new games or improvements to existing ones.</p>
               <p>Feel free to reach out through any of the channels above!</p>
             </div>
           </div>
