@@ -49,7 +49,7 @@ const Learn = () => {
             <h2>2048</h2>
             <p>The 2048 game offers a sophisticated puzzle experience with multiple unique features. Players slide and merge 
                 numbered tiles to create larger numbers, with the ultimate goal of reaching the 2048 tile. This version goes 
-                beyond the basic gameplay with an intelligent AI solver that can automatically play the game using advanced 
+                beyond the basic gameplay with a Greedy search AI solver that can automatically play the game using advanced 
                 heuristic algorithms.</p>
             <p>The game features a complex scoring system, move tracking, and a high-score tracking mechanism. 
                 The AI solver uses sophisticated evaluation methods, including calculating board monotonicity, merge potential, 

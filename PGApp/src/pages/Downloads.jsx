@@ -162,7 +162,7 @@ const Downloads = () => {
                   <li><strong>Linux:</strong> Ubuntu 20.04+ recommended</li>
                   <li><strong>MacOS:</strong> Not currently supported</li>
               </ul>
-              <li>Storage: 250MB minimum free space (All Games)</li>
+              <li>Storage: 300MB minimum free space (All Games)</li>
               <li>RAM: 4GB minimum (8GB recommended)</li>
               <li>No Python installation required (all dependencies are bundled in the executable)</li>
               <li>Source Code Only: Python 3.9 for PyQt5 games and Python 3.11 for Pyside6 games with dependencies located in requirements.txt</li>
