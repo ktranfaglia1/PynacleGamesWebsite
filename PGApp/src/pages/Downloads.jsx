@@ -157,7 +157,10 @@ const Downloads = () => {
           <div className="info-card">
             <h3>How to Install</h3>
             <ol>
-              <li>Download the game executable for your operating system</li>
+              <li>Download the game executable for your operating system </li>
+                <ul> 
+                  <li> It may get marked as suspicious by your browser and require confirmation in downloads </li> 
+                </ul>
               <li>Create a folder in your drive to store the executable</li>
               <li>Copy the game executable from the downloads folder to the folder</li>
               <li>Double-click the executable file in its new location to launch the game</li>
