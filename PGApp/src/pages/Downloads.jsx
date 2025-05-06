@@ -157,16 +157,18 @@ const Downloads = () => {
           <div className="info-card">
             <h3>How to Install</h3>
             <ol>
-              <li>Download the game executable for your operating system </li>
+              <li>Download the game executable for your operating system
                 <ul> 
                   <li> It may get flagged as suspicious by your browser and require confirmation to download </li> 
                 </ul>
+              </li>
               <li>Create a folder in your drive to store the executable</li>
               <li>Copy the game executable from the downloads folder to the new folder</li>
-              <li>Double-click the executable file in its new location to launch the game</li>
+              <li>Double-click the executable file in its new location to launch the game
                 <ul> 
                   <li> It may get flagged as suspicious by your operating system and require confirmation to run </li> 
                 </ul>
+              </li>
               <li>Consider making a shortcut to place on your desktop!
                 <ul>
                   <li><strong>Windows:</strong> Right-click the game executable in its folder, select "Send to" → "Desktop (create shortcut)"</li>
@@ -180,12 +182,13 @@ const Downloads = () => {
           <div className="info-card">
             <h3>System Requirements</h3>
             <ul>
-              <li>Operating System:</li>
-              <ul>
-                  <li><strong>Windows:</strong> Windows 10/11</li>
-                  <li><strong>Linux:</strong> Ubuntu 20.04+ recommended</li>
-                  <li><strong>MacOS:</strong> Not currently supported</li>
-              </ul>
+              <li>Operating System:
+                <ul>
+                    <li><strong>Windows:</strong> Windows 10/11</li>
+                    <li><strong>Linux:</strong> Ubuntu 20.04+ recommended</li>
+                    <li><strong>MacOS:</strong> Not currently supported</li>
+                </ul>
+              </li>
               <li>Storage: ~300MB minimum free space (All Games)</li>
               <li>RAM: 4GB minimum (8GB recommended)</li>
               <li>No Python installation required (all dependencies are bundled in the executable)</li>
