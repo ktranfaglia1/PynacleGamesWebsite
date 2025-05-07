@@ -31,9 +31,9 @@ const Footer = () => {
           <div className="footer-column">
             <h3>Popular Games</h3>
             <ul>
-              <li><Link to="/games/1">Connect Four</Link></li>
-              <li><Link to="/games/3">Snake</Link></li>
-              <li><Link to="/games/2">2048</Link></li>
+              <li><Link to="/downloads?game=1">Connect Four</Link></li>
+              <li><Link to="/downloads?game=3">Snake</Link></li>
+              <li><Link to="/downloads?game=2">2048</Link></li>
             </ul>
           </div>
           
