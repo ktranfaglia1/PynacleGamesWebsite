@@ -134,7 +134,7 @@
 .download-size {
     display: flex;
     align-items: center;
-    font-size: .8rem;
+    font-size: .9rem;
     color: var(--text-light);
 }
 

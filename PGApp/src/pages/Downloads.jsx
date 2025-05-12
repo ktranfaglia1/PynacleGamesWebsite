@@ -1,6 +1,8 @@
 import React, { useState, useEffect } from 'react';
 import { useLocation } from 'react-router-dom';
 import '../assets/styles/Downloads.css';
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import { faWindows, faLinux } from '@fortawesome/free-brands-svg-icons';
 
 const Downloads = () => {
   const allDownloads = [
@@ -173,7 +175,6 @@ const Downloads = () => {
                 <ul>
                   <li><strong>Windows:</strong> Right-click the game executable in its folder, select "Send to" → "Desktop (create shortcut)"</li>
                   <li><strong>Linux:</strong> Right-click the executable, select "Create Link" or "Make Link", then move the link to your Desktop</li>
-                  <li><strong>MacOS:</strong> Not currently supported</li>
                 </ul>
               </li>
             </ol>
@@ -221,8 +222,8 @@ const Downloads = () => {
                 <h3>{download.title}</h3>
                 <div className="download-meta">
                   <div className="download-sizes">
-                    <span className="download-size"><span className="btn-icon">🪟</span> {download.windowsSize}</span>
-                    <span className="download-size"><span className="btn-icon">🐧</span> {download.linuxSize}</span>
+                    <span className="download-size"><span className="btn-icon"><FontAwesomeIcon icon={faWindows} style={{ color: '#0078D6' }} /></span>{download.windowsSize}</span>
+                    <span className="download-size"><span className="btn-icon"><FontAwesomeIcon icon={faLinux} style={{ color: '#000000' }} /></span>{download.linuxSize}</span>
                   </div>
                   <span className="download-expand-icon">
                     {expandedId === download.id ? '-' : '+'}
@@ -242,10 +243,10 @@ const Downloads = () => {
                 {/* Download buttons container */}
                 <div className="download-buttons">
                   <a href={download.windowsUrl} className="btn btn-download">
-                    <span className="btn-icon">🪟</span> Windows
+                    <span className="btn-icon"><FontAwesomeIcon icon={faWindows} /></span> Windows
                   </a>
                   <a href={download.linuxUrl} className="btn btn-download linux">
-                    <span className="btn-icon">🐧</span> Linux
+                    <span className="btn-icon"><FontAwesomeIcon icon={faLinux} /></span> Linux
                   </a>
                 </div>
               </div>
