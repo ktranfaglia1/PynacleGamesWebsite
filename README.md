@@ -11,7 +11,7 @@ Pynacle Games is a set of six desktop games written in Python, several with AI o
 | `/` | Home | Introduction, featured games, and a call to download |
 | `/games` | Games | The full collection, with a search box and filters for strategy, puzzle and arcade games |
 | `/learn` | Learn | A documentation section for each game (Connect Four, 2048, Snake, Tic-Tac-Toe, 15-Puzzle, Chess): rules, controls and the algorithms behind the AI |
-| `/downloads` | Downloads | Builds for Windows, macOS and Linux, with step-by-step install and shortcut instructions for each OS |
+| `/downloads` | Downloads | Builds for Windows (`.exe`) and Linux (AppImage), with step-by-step install and shortcut instructions for each |
 | `/about` | About | The project's goals: free, easy-to-use and algorithmically interesting games |
 | `/connect` | Connect | About the developer and how to get in touch |
 
